@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .main {
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 6vh 88vh 6vh;
+            grid-template-columns: auto minmax(300px, 500px) auto;
+            overflow: hidden;
+        }
+        .main > img {
+            grid-row: 2 / 3;
+            grid-column: 2 / 3;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .content {
+            display: flex;
+            grid-row: 2 / end;
+            grid-column: 2 / 3;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            text-align: center;
+            margin-top: -6vh;
+        }
+        .title h1 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 6em;
+            letter-spacing: .3em;
+            margin-left: .3em;
+            margin-bottom: .3em;
+            line-height: .9em;
+            color: #a2e8e9;
+            text-transform: uppercase;
+        }
+        .title p {
+            text-transform: uppercase;
+            letter-spacing: .3em;
+            font-size: .8em;
+        }
+        .info h4 {
+            position: relative;
+            text-transform: uppercase;
+            font-family: 'Roboto Slab', serif;
+            font-weight: 300;
+            padding: 1.5em;
+            font-size: 1.4em;
+            color: #D91E75;
+        }
+        .info h4::after {
+            content: "";
+            position: absolute;
+            width: 20%;
+            height: .2em;
+            background-color: #a2e8e9;
+            bottom: 0px;
+            right: 50%;
+            margin-right: -10%;
+        }
+        .info p {
+            font-family: 'Roboto', sans-serif;
+            text-transform: uppercase;
+            font-weight: 300;
+            padding: 1.5em;
+            line-height: 1.5em;
+        }
+        .info h2 {
+            display: inline-block;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: black;
+            background-color: #a2e8e9;
+            padding: .2em .4em;
+            margin-bottom: 3.5vh;
+            margin-top: .5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="bg.jpg" alt="">
+        <div class="content">
+            <div class="title">
+                <h1>Carat</h1>
+                <p>unleashing your inner gem</p>
+            </div>
+            <div class="info">
+                <h4>melanie marty</h4>
+                <p>the popstar reveals <br> what it was like to come <br> out to her parents</p>
+                <h2>precious girl</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
